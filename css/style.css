@@ -447,6 +447,10 @@ a:focus {
     .navbar-nav{
         margin-top: 20px;
     }
+    .modal-body{
+        max-height: 650px;
+        overflow-y: scroll;
+    }
 }
 
 /*******************************/
@@ -863,7 +867,9 @@ a:focus {
 .price {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    text-align: right;
+    font-weight: bold;
+    /*padding: 10px 0 15px 0;*/
 }
 
 .price .price-item {
@@ -2232,4 +2238,68 @@ p.quia {
 
 .inner-border::-webkit-scrollbar{
     display: none;
+}
+.btn:focus, .btn-readmore:focus, button:focus{
+    outline: none;
+}
+/*Pop up menu*/
+.btn-readmore{
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 1px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s linear;
+    text-align: center;
+    background: #e99c2e;
+    color: white !important;
+}
+.btn-readmore:hover{
+    background: #ffb858;
+    color: white;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+.arrow-down {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #fff;
+}
+
+.menu-popup{
+    list-style: none;
+    padding-left: 0;
+}
+.menu-popup li{
+    border-bottom: 1px dashed #e2e6ea;
+}
+.menu-popup .menu-item, .menu-popup .price{
+    color: #222;
+    padding-right: 0;
+}
+.menu-popup .menu-item{
+    text-align: left;
+    padding-left: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.modal-title{
+    color: #a07015;
+    font-weight: bold;
+}
+.sub-text{
+    font-size: 13px !important;
+    font-style: italic;
+    color: #888;
+    text-align: left;
 }
