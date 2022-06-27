@@ -2279,10 +2279,10 @@ p.quia {
     padding-left: 0;
 }
 .menu-popup li{
-    border-bottom: 1px dashed #e2e6ea;
+    border-bottom: 1px dashed #cfccc3;
 }
 .menu-popup .menu-item, .menu-popup .price{
-    color: #222;
+    color: #9b5902;
     padding-right: 0;
 }
 .menu-popup .menu-item{
@@ -2294,7 +2294,7 @@ p.quia {
     display: none;
 }
 .modal-title{
-    color: #a07015;
+    color: #fff;
     font-weight: bold;
 }
 .sub-text{
